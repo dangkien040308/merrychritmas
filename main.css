@@ -1,0 +1,72 @@
+body {
+    margin : 0 ;
+}
+#container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.desc {
+    color: #FFF;
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 65px;
+    margin: 50px 0;
+    text-align: center;
+    text-shadow: 7px 7px 20px 	#3366CC;
+}
+.snow {
+    position: absolute;
+    top : 0 ;
+    left: 0 ;
+    height: 50px;
+    width : 50px;
+    background-image: url(snow.png);
+    background-size: cover;
+    animation: animsnow 5s ease-in-out infinite;
+}
+.ong-gia-noel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+.ong-gia-noel > img {
+    width: 30vw;
+    background-position: top ;
+}
+.ong-gia-noel > img {
+    border-radius: 50px;
+    background-color: aquamarine;
+}
+.me {
+    color: #FFF;
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 40px;
+    margin: 10px 0;
+    text-align: center;
+
+}
+@keyframes animsnow {
+    0% {
+        transform: translate(0,0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(100px,70vh);
+    }
+}
+
+@media screen and (max-width : 567px) {
+    .ong-gia-noel > img  {
+        width: 30vw;
+    }
+    
+}
